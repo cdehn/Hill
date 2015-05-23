@@ -1,10 +1,10 @@
 public class hillCipher {
 	public static void main(String[] args){
 		String cipher = "rccd";
-		for(int i = 0; i < 4; i++){
-			for(int j = 0; j < 4; j++){
-				for(int k = 0; k < 4; k++){
-					for(int l = 0; l < 4; l++){
+		for(int i = 0; i < 26; i++){
+			for(int j = 0; j < 26; j++){
+				for(int k = 0; k < 26; k++){
+					for(int l = 0; l < 26; l++){
 						int[][]keymatrix = {{i,j},{k,l}};
 						int det = keymatrix[0][0] * keymatrix[1][1] - keymatrix[1][0] * keymatrix[0][1];
 						System.out.println(det);
